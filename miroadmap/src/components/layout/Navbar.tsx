@@ -24,13 +24,7 @@ export const Navbar = () => {
                 <p className='font-semibold self-center'>Miroadmap</p>
             </div>
 
-            {!isMobile && (
-                <div className='flex items-center'>
-                    <input type='text' placeholder='Buscar' className='self-center rounded-full p-2 bg-gray-800 text-white outline-none font-semibold text-sm' />
-                </div>
-            )}
-
-            {
+            {/* {
                 isMobile && (
                     <div className='rounded-2xl flex justify-around'>
                         <div className='rounded-full bg-gray-800 p-2'>
@@ -38,18 +32,25 @@ export const Navbar = () => {
                         </div>
                     </div>
                 )
-            }
+            } */}
 
-            <div className='rounded-2xl flex justify-around'>
-                <div className='rounded-full bg-gray-800 p-2'>
-                    <Profile size={35} />
+            <div className='flex justify-between gap-5'>
+                {!isMobile && (
+                    <div className='flex items-center'>
+                        <input type='text' placeholder='Buscar' className='self-center rounded-full p-2 bg-gray-800 text-white outline-none font-semibold text-sm' />
+                    </div>
+                )}
+                <div className='rounded-2xl flex justify-around'>
+                    <div className='rounded-full bg-gray-800 p-2'>
+                        <Profile size={35} />
+                    </div>
                 </div>
             </div>
-            {isMobile && (
+            {/* {isMobile && (
                 <div className='mt-2 w-full flex justify-center'>
                     <input type='text' placeholder='Buscar' className='w-4/5 rounded-full p-2 bg-gray-800 text-white outline-none font-semibold text-sm' />
                 </div>
-            )}
+            )} */}
         </div>
     );
 };
