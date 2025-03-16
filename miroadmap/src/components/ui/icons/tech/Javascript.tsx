@@ -8,7 +8,14 @@ interface Props {
 
 export const Javascript = ({ size = 24, className, color }: Props) => {
     return (
-        <svg width={size} viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
+        <svg 
+            width={size} 
+            viewBox="0 0 256 256"
+            version="1.1" 
+            xmlns="http://www.w3.org/2000/svg" 
+            preserveAspectRatio="xMidYMid"
+            className={className}
+        >
             <g>
                 <path d="M0,0 L256,0 L256,256 L0,256 L0,0 Z" fill="#F7DF1E">
 
